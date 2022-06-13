@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "591095695266",
+    "project_id": "mineable-e1093",
+    "storage_bucket": "mineable-e1093.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591095695266:android:b7e2ec2f7d1b5ee7a854fb",
+        "android_client_info": {
+          "package_name": "com.mine.mineable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591095695266-imp41gvmiuestjeqfgj21utkskkocepl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mine.mineable",
+            "certificate_hash": "9185277cc2ffed01f083a1fd74315ddaae520ce2"
+          }
+        },
+        {
+          "client_id": "591095695266-6r1vlgna59vs6gvpa3j7rdtqdprtbr0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtmaOz34Hf1lnDc1xsTfhGOgHHFj9wgu8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591095695266-6r1vlgna59vs6gvpa3j7rdtqdprtbr0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

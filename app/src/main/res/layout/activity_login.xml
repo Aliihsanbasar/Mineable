@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_33"
+        android:src="@drawable/login_illustration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtWelcomeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_22"
+        android:fontFamily="@font/robotobold"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogin" />
+
+    <EditText
+        android:id="@+id/edtMail"
+        android:layout_width="@dimen/dimen_343"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="@dimen/dimen_37"
+        android:background="@drawable/disabled_frame"
+        android:drawableStart="@drawable/ic_contacts"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:paddingStart="12dp"
+        android:hint="example@email.com"
+        android:textColor="#1A4F8B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcomeBack" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="@dimen/dimen_343"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/disabled_frame"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="12dp"
+        android:fontFamily="@font/robotoregular"
+        android:hint="password"
+        android:paddingStart="12dp"
+        android:textColor="#1A4F8B"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtMail" />
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/forgot_password"
+        app:layout_constraintEnd_toEndOf="@id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="@dimen/dimen_343"
+        android:layout_height="@dimen/dimen_50"
+        android:layout_marginTop="79dp"
+        android:text="@string/log_in"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/aldrichregular"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        />
+
+    <TextView
+        android:id="@+id/textConnectVia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/or_connect_with_social"
+        android:fontFamily="@font/robotoregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFacebook"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/facebook_btn"
+        app:layout_constraintStart_toStartOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGoogle"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="111dp"
+        android:background="@drawable/google_btn"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
